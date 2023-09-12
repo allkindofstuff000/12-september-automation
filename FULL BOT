@@ -131,8 +131,8 @@ for profile_directory in profile_directories:
     driver.get('https://megapersonals.eu/')
 
 
-# Check if the "I Agree" button is present on the page
-agree_button = driver.find_elements(By.ID, 'ageagree')
+    # Redirect to a different URL
+    driver.get('https://megapersonals.eu/users/register')
 
 
 # Add a 5-second delay before locating the email field
@@ -144,7 +144,7 @@ password_field = driver.find_element(By.ID, 'person_password_field_signup')
 confirm_password_field = driver.find_element(By.ID, 'person_confirmPassword_field_signup')
 
 # Read the email and password from the file
-with open("C:\\Users\\$\\Desktop\\ALLSET\\email3.txt", "r") as f:
+with open("C:\\Users\\$\\Desktop\\ALLSET\\EMAIL1.txt", "r") as f:
     line = f.readline()
     email, password = line.split(":") # Split by colon
 
@@ -249,9 +249,9 @@ category_dropdown.click()
 category_option = driver.find_element(By.XPATH, "//option[contains(text(), 'I AM A WOMAN seeking Men')]")
 category_option.click()
 
-# Function to generate random text
+# Function to generate random text with emojis and custom characters
 def generate_random_text(words_count):
-    words = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit', 'sed', 'do']
+    words = ['LATINA DREAM GIRL', 'Anal Doggy Style', 'Available Any Style Fuck For You', ' Blowjob ', ' Missionary', 'Photos nudes package deals', ' 𝐈𝐧𝐂𝐚𝐥𝐥 𝐎𝐮𝐭𝐂𝐚𝐥𝐥𝐂𝐚𝐫', 'HornyQueen', 'No Cops', ' No Games ']
     random_words = ' '.join(random.choices(words, k=words_count))
     return random_words
 
@@ -308,7 +308,7 @@ next_button = driver.find_element(By.ID, 'next_button_from_first_form_page')
 next_button.click()
 
 # Add a delay before uploading the picture
-time.sleep(6)
+time.sleep(2)
 
 picture_directory = "C:\\Users\\$\\Desktop\\ALLSET\\pic"
 
@@ -396,7 +396,7 @@ time.sleep(3)
 # Rest of the code...
 
 # Open the text file and read the values for year, month and day
-with open("C:\\Users\\$\\Desktop\\ALLSET\\dateofbirth3.txt", "r") as f:
+with open("C:\\Users\\$\\Desktop\\ALLSET\\DATEOFBIRTH1.txt", "r") as f:
     date_of_birth = f.read().split(":") # Split by colon to get a list of values
     year = date_of_birth[0]
     month = date_of_birth[1]
